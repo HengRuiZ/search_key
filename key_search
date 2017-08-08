@@ -28,9 +28,9 @@ int search(int l,char* s1,char* s2)
 	}
 	if(m)
 	{
-		printf("µÚ%dÐÐ£º",l);
+		printf("ç¬¬%dè¡Œï¼š",l);
 		for(j=0;j<m;j++)
-			printf("µÚ%dÎ»",k[j]+1);
+			printf("ç¬¬%dä½",k[j]+1);
 		printf("\n");
 	}
 	return m;
@@ -39,15 +39,15 @@ main()
 {
 	int i,j=0;
 	char s1[200],s2[200];
-	cout<<"ÇëÊäÈëÎÄ¼þÃû"<<endl;
+	cout<<"è¯·è¾“å…¥æ–‡ä»¶å"<<endl;
 	cin>>s1;
 	if((fp=fopen(s1,"r+"))==NULL)
 	{
-		cout<<"´ò¿ªÎÄ¼þÊ§°Ü£¡"<<endl;
+		cout<<"æ‰“å¼€æ–‡ä»¶å¤±è´¥ï¼"<<endl;
 		return 0;
 	}
 	while(1){
-	cout<<"ÇëÊäÈë¹Ø¼ü´Ê"<<endl;
+	cout<<"è¯·è¾“å…¥å…³é”®è¯"<<endl;
 	cin>>s2;
 	fseek(fp,0,0);
 	for(i=1;!feof(fp);i++)
